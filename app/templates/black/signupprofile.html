@@ -1,100 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from gambolthemes.net/html-items/brexit/Black/signupprofile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 15:15:50 GMT -->
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<link href="images/header/fav.png" rel="shortcut icon" type="image/x-icon" />
-<title>Youlisting | Sign Up Profile </title>
-
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
-
-<link rel="stylesheet" href="css/portfolio.css" type="text/css">
-<link rel="stylesheet" href="css/owlslider.css" type="text/css">
-
-<link href="css/sb-admin.css" rel="stylesheet" type="text/css">
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
-</head>
-<body>
-<div class="sign">
-<div class="container">
-<div class="row">
-<div class="col-lg-12 col-sm-12">
-<div class="bg-form">
-<div class="sinheader">
-<div class="col-md-6">
-<a href="index_1.html"><img src="images/header/logo.svg" alt=""></a>
-</div>
-<div class="sings col-md-6">
-<p>Have an already account! - <a href="signin.html">Sign in here</a></p>
-</div>
-<div class="clearfix">
-</div>
-<div class="sform">
-<h1>Sign Up</h1>
-<span>Hello there! Sign up and start managing your item.</span>
-<div class="row justify-content-md-center">
-<div class="col-lg-6 col-sm-12">
-<form class="sinup" action="#">
-<div class="signprofile">
-<img src="images/profile/profile.png" alt="">
-</div>
-<div class="profilename">
-<h4>John Doe</h4>
-<p>Pages with profile pictures show up higher in search result.</p>
-</div>
-<div class="addpic" id="OpenImgUpload">
-<input type="file" id="file">
-<label for="file">Add a Profile Picture</label>
-<p>A square photo or logo works well here</p>
-</div>
-<a href="signupnext.html" class="black-next">back</a>
-<a href="singupcover.html" class="btn-next">Next</a>
-</form>
-</div>
-</div>
-</div>
-</div>
-<div class="footer-sign">
-<div class="p-left col-md-8 footermenu">
-<ul>
-<li><a href="#">About </a></li>
-<li><a href="#">Faq’s</a></li>
-<li><a href="#"> Privacy policy</a></li>
-<li><a href="#">Advertise</a></li>
-<li><a href="#">career</a></li>
-<li><a href="#">Term and conditions </a></li>
-<li><a href="#">Press</a></li>
-<li><a href="#">Sitemap</a></li>
-<li><a href="#">Tags</a></li>
-<li><a href="#">Blog</a></li>
-</ul>
-</div>
-<div class="p-left col-md-4 copyrightsign">
-© Copyright 2019 by <a href="#">Gambol.</a> All Rights Reserved.
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<script>
-		window.oncontextmenu = function () {
+ <!-- Mirrored from gambolthemes.net/html-items/brexit/Black/signupprofile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 15:15:50 GMT -->
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta content="" name="description"/>
+  <meta content="" name="author"/>
+  <link href="images/header/fav.png" rel="shortcut icon" type="image/x-icon"/>
+  <title>
+   Youlisting | Sign Up Profile
+  </title>
+  <link href="{{url_for('static', filename='black/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet"/>
+  <link href="{{url_for('static', filename='black/css/style.css')}}" rel="stylesheet"/>
+  <link href="{{url_for('static', filename='black/css/responsive.css')}}" rel="stylesheet"/>
+  <link href="{{url_for('static', filename='black/css/portfolio.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url_for('static', filename='black/css/owlslider.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url_for('static', filename='black/css/sb-admin.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url_for('static', filename='black/css/font-awesome.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url_for('static', filename='black/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css"/>
+  <link href="{{url_for('static', filename='black/assets/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet"/>
+  <link href="{{url_for('static', filename='black/assets/owlcarousel/assets/owl.theme.default.min.css')}}" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="sign">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-12 col-sm-12">
+      <div class="bg-form">
+       <div class="sinheader">
+        <div class="col-md-6">
+         <a href="index_1.html">
+          <img alt="" src="{{url_for('static', filename='black/images/header/logo.svg')}}"/>
+         </a>
+        </div>
+        <div class="sings col-md-6">
+         <p>
+          Have an already account! -
+          <a href="signin.html">
+           Sign in here
+          </a>
+         </p>
+        </div>
+        <div class="clearfix">
+        </div>
+        <div class="sform">
+         <h1>
+          Sign Up
+         </h1>
+         <span>
+          Hello there! Sign up and start managing your item.
+         </span>
+         <div class="row justify-content-md-center">
+          <div class="col-lg-6 col-sm-12">
+           <form action="#" class="sinup">
+            <div class="signprofile">
+             <img alt="" src="{{url_for('static', filename='black/images/profile/profile.png')}}"/>
+            </div>
+            <div class="profilename">
+             <h4>
+              John Doe
+             </h4>
+             <p>
+              Pages with profile pictures show up higher in search result.
+             </p>
+            </div>
+            <div class="addpic" id="OpenImgUpload">
+             <input id="file" type="file"/>
+             <label for="file">
+              Add a Profile Picture
+             </label>
+             <p>
+              A square photo or logo works well here
+             </p>
+            </div>
+            <a class="black-next" href="signupnext.html">
+             back
+            </a>
+            <a class="btn-next" href="singupcover.html">
+             Next
+            </a>
+           </form>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="footer-sign">
+        <div class="p-left col-md-8 footermenu">
+         <ul>
+          <li>
+           <a href="#">
+            About
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Faq’s
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Privacy policy
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Advertise
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            career
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Term and conditions
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Press
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Sitemap
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Tags
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Blog
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="p-left col-md-4 copyrightsign">
+         © Copyright 2019 by
+         <a href="#">
+          Gambol.
+         </a>
+         All Rights Reserved.
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="{{url_for('static', filename='black/vendor/jquery/jquery.min.js')}}">
+  </script>
+  <script src="{{url_for('static', filename='black/vendor/bootstrap/js/bootstrap.bundle.min.js')}}">
+  </script>
+  <script>
+   window.oncontextmenu = function () {
 			return false;
 		}
 		$(document).keydown(function (event) {
@@ -105,8 +169,7 @@
 				return false;
 			}
 		});
-	</script>
-</body>
-
-<!-- Mirrored from gambolthemes.net/html-items/brexit/Black/signupprofile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 15:15:52 GMT -->
+  </script>
+ </body>
+ <!-- Mirrored from gambolthemes.net/html-items/brexit/Black/signupprofile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 15:15:52 GMT -->
 </html>
